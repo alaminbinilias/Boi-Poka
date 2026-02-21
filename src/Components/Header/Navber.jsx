@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router";
 const Navber = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm w-full lg:w-300 mx-auto rounded-md">
+      <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,13 +29,13 @@ const Navber = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link>Home</Link>
+                <NavLink>Home</NavLink>
               </li>
               <li>
-                <Link>Listed Books</Link>
+                <NavLink>Listed Books</NavLink>
               </li>
               <li>
-                <Link>Pages to Read</Link>
+                <NavLink>Pages to Read</NavLink>
               </li>
             </ul>
           </div>
@@ -44,19 +44,19 @@ const Navber = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 flex items-center">
             <li>
-              <Link>Home</Link>
+              <NavLink className='font-semibold' to='/'>Home</NavLink>
             </li>
             <li>
-              <Link>Listed Books</Link>
+              <NavLink className="font-semibold" to>Listed Books</NavLink>
             </li>
             <li>
-              <Link>Pages to Read</Link>
+              <NavLink className="font-semibold">Pages to Read</NavLink>
             </li>
           </ul>
         </div>
-        <div className="navbar-end gap-3">
-          <a className="btn bg-green-500">Sign In</a>
-          <a className="btn bg-[#58c5d1]">Sign Up</a>
+        <div className="navbar-end gap-1">
+          <a className="btn bg-green-500 font-bold">Sign In</a>
+          <a className="btn bg-[#58c5d1] font-bold">Sign Up</a>
         </div>
       </div>
     </div>
