@@ -13,19 +13,19 @@ const BookCard = ({ book }) => {
                     <div className='m-5'>
 
                         <div className='flex gap-4 mb-4'>
-                            <p className='bg-[#f4fcf2] text-[#22bf0a] px-5 py-1 rounded-2xl'>Young Adult</p>
-                            <p className='bg-[#f4fcf2] text-[#22bf0a] px-5 py-1 rounded-2xl'>Identity</p>
+                            <p className='bg-[#f4fcf2] text-[#22bf0a] px-5 py-1 rounded-2xl'>{book.tags[0]}</p>
+                            <p className='bg-[#f4fcf2] text-[#22bf0a] px-5 py-1 rounded-2xl'>{book.tags[1]}</p>
                         </div>
 
-                        <h3 className='font-semibold text-[1.5rem] mb-3'>The Catcher in the Rye</h3>
-                        <p className='text-[1.2rem] font-mono pb-4 border-b-2 border-dashed border-gray-300'>By : Awlad Hossain</p>
+                        <h3 className='font-semibold text-[1.5rem] mb-3'>{book.bookName}</h3>
+                        <p className='text-[1.2rem] font-mono pb-4 border-b-2 border-dashed border-gray-300'>By : {book.author}</p>
                     </div>
                     <div className='flex justify-between m-5 items-center'>
                         <div>
-                            <p className='font-mono text-[1.2rem]'>Fiction</p>
+                            <p className='font-mono text-[1.2rem]'>{book.category}</p>
                         </div>
                         <div className='flex gap-2 font-mono'>
-                            <p>5.00</p>
+                            <p>{book.rating}</p>
                             <div>
                                 <img src={star} alt="" />
                             </div>
