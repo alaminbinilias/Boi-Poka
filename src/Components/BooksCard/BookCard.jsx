@@ -6,9 +6,9 @@ const BookCard = ({ book }) => {
     return (
         <div>
             <div>
-                <div className='border-2 border-gray-300 rounded-lg'>
+                <div className='border-2 border-gray-300 rounded-lg h-130'>
                     <div className='bg-[#f2f2f2] m-5 p-10 rounded-lg'>
-                        <img src={book.image} className='w-40 h-60 mx-auto' alt="" />
+                        <img src={book.image} className='w-40 h-40 mx-auto' alt="" />
                     </div>
                     <div className='m-5'>
 
