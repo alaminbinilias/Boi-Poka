@@ -17,6 +17,7 @@ const router= createBrowserRouter([
       },
       {
         path:'/BookDetails/:id',
+        loader:()=>fetch('../../public/Data/Data.json'),
         Component:BookDetails,
         errorElement:<Error></Error>
       }
