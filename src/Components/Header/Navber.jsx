@@ -39,7 +39,7 @@ const Navber = () => {
               </li>
             </ul>
           </div>
-          <a className="btn font-bold text-[1.5rem] btn-ghost text-xl">Book Vibe</a>
+          <NavLink to='/'><a className="btn font-bold text-[1.5rem] btn-ghost text-xl">Book Vibe</a></NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 flex items-center">
@@ -55,8 +55,8 @@ const Navber = () => {
           </ul>
         </div>
         <div className="navbar-end gap-1">
-          <a className="btn bg-green-500 font-bold">Sign In</a>
-          <a className="btn bg-[#58c5d1] font-bold">Sign Up</a>
+          <a href="https://github.com" target="_black" className="btn bg-green-500 font-bold">Github</a>
+          <a className="btn bg-[#58c5d1] font-bold">SignUp</a>
         </div>
       </div>
     </div>

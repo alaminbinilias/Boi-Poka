@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router";
+import { SetItemLocal } from "../../Utilites/utility";
 
 
 const BookDetails = () => {
@@ -9,6 +10,10 @@ const BookDetails = () => {
   //console.log(indx);
   const dta=Data.find(book=>book.bookId===indx);
   //console.log(dta);
+  const HandleReadBtn=(id)=>{
+    //console.log(id);
+    SetItemLocal(id);
+  }
   return (
     <div>
       <div className="mt-15 grid grid-cols-1 mx-2 lg:mx-0 lg:grid-cols-2 gap-10">
@@ -62,7 +67,7 @@ const BookDetails = () => {
 
           <div className="mt-5">
             <div className="flex gap-2">
-              <button className=" btn border-2 rounded-md cursor-pointer font-semibold border-gray-300 btn-black px-6">Read</button>
+              <button className=" btn border-2 rounded-md cursor-pointer font-semibold border-gray-300 btn-black px-6" onClick={()=>HandleReadBtn(dta.bookId)}>Read</button>
               <button className="btn bg-[#51b1c9] text-gray-200 px-5">Wishlist</button>
             </div>
           </div>
